@@ -1,7 +1,7 @@
 // Development Plan: Commit the code each time a step is completed.
 // [x] Write and build the boilerplate code for Arduino (#include<Arduino.h>, setup(), loop())
 // [x] Open the simulator
-// [ ] Make the red LED flash on and off once every 50 milliseconds.
+// [x] Make the red LED flash on and off once every 50 milliseconds.
 // [ ] Make the red LED flash on and off only if one of the buttons is being pressed.
 // [ ] Turn on an LED when the button of a corresponding color is held down.
 // [ ] The blue LED should be different; it should turn off when its button is pressed, not on.
@@ -12,9 +12,13 @@
 #include <Arduino.h>
 
 void setup(){
-
+    pinMode(3,OUTPUT);
 }
 
 void loop(){
-
+    //red light on and off
+        digitalWrite(3,LOW);
+        delay(50);
+        digitalWrite(3,HIGH);
+        delay(50);
 }
